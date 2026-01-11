@@ -1,31 +1,25 @@
+/* أساسي مع ألوان بنفسجية جذابة */
 body {
-  font-family: Arial, sans-serif;
-  background: #f6f6f6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f0f8;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background: #9b59b6; /* بنفسجي جذاب */
+  background: linear-gradient(135deg, #a17fe0, #8e44ad);
   color: white;
-  padding: 25px;
+  padding: 30px;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2.5em;
-}
-
-header p {
-  margin: 5px 0 0 0;
-  font-size: 1.1em;
-}
+header h1 { margin: 0; font-size: 2.8em; }
+header p { margin: 5px 0 0 0; font-size: 1.2em; }
 
 nav {
   text-align: center;
-  background: #8e44ad;
-  padding: 10px 0;
+  background: #7d3c98;
+  padding: 12px 0;
 }
 
 nav a {
@@ -33,10 +27,11 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  font-size: 1em;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   padding: 20px;
 }
@@ -44,32 +39,39 @@ nav a {
 .post {
   background: white;
   padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
+  margin-bottom: 25px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   gap: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
 }
 
-.post img {
-  width: 120px;
-  border-radius: 8px;
-}
+.post:hover { transform: translateY(-5px); }
 
-.post-content {
-  flex: 1;
-}
+.post img { width: 120px; border-radius: 10px; }
 
-.post h2 {
-  margin-top: 0;
-}
+.post-content { flex: 1; }
+
+.post h2 { margin-top: 0; color: #5e2d8b; }
 
 .button {
   display: inline-block;
   background: #9b59b6;
   color: white;
-  padding: 12px 20px;
+  padding: 12px 22px;
   border-radius: 8px;
   text-decoration: none;
+  font-weight: bold;
   margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.button:hover { background: #7d3c98; }
+
+/* تصميم متجاوب */
+@media (max-width: 768px) {
+  .post { flex-direction: column; text-align: center; }
+  .post img { width: 100px; }
 }
