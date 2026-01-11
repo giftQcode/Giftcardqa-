@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f6f6f6;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #9b59b6; /* بنفسجي جذاب */
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  margin: 5px 0 0 0;
+  font-size: 1.1em;
+}
+
+nav {
+  text-align: center;
+  background: #8e44ad;
+  padding: 10px 0;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.post img {
+  width: 120px;
+  border-radius: 8px;
+}
+
+.post-content {
+  flex: 1;
+}
+
+.post h2 {
+  margin-top: 0;
+}
+
+.button {
+  display: inline-block;
+  background: #9b59b6;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 10px;
+}
